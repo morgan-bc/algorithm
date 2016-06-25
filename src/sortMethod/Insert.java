@@ -8,7 +8,11 @@ import edu.princeton.cs.algs4.*;
 public class Insert {
 	public static void sort ( Comparable[] a) 
 	{
-		
+		int N = a.length;
+		for (int i = 1; i < N; ++i){
+			for (int j = i; j >0; --j )
+				if (less(a[j], a[j-1]))	exch(a, j, j-1);
+		}
 	}
 	public static void exch (Comparable[]a , int i, int j)
 	{
@@ -32,8 +36,10 @@ public class Insert {
 	public static void main(String[] args) throws FileNotFoundException {
 		In in = new In(args[0]);
 		String[] a =in.readAllStrings(); 
+		show(a);
 		sort(a);
-		assert isSorted(a);
+		//assert isSorted(a);
+		System.out.println(isSorted(a));
 		show(a);
 	
 	}
