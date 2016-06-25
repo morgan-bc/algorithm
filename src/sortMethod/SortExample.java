@@ -8,6 +8,10 @@ import edu.princeton.cs.algs4.*;
 public class SortExample {
 	public static void sort ( Comparable[] a) 
 	{}
+	public static void exch (Comparable[]a , int i, int j)
+	{
+		Comparable t = a[i]; a[i] = a[j]; a[j] = t;
+	}
 	public static boolean less (Comparable x, Comparable y)
 	{ return x.compareTo(y) < 0; }
 	public static void show (Comparable[] a)
