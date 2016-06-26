@@ -2,7 +2,7 @@ package sortMethod;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import edu.princeton.cs.algs4.*;
+import edu.princeton.cs.algs4.In;
 
 
 public class SortExample {
@@ -31,7 +31,7 @@ public class SortExample {
 		In in = new In(args[0]);
 		String[] a =in.readAllStrings(); 
 		sort(a);
-		assert isSorted(a);
+		System.out.println(isSorted(a));
 		show(a);
 	
 	}

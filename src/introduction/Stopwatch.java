@@ -2,8 +2,11 @@ package introduction;
 
 public class Stopwatch 
 {
-	private final long start;
+	private long start;
 	public Stopwatch() {
+		start = System.currentTimeMillis();
+	}
+	public void begin() {
 		start = System.currentTimeMillis();
 	}
 	public double elapsedTime () {
