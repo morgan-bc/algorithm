@@ -1,7 +1,10 @@
 package introduction;
-import edu.princeton.cs.algs4.*;
+
 public class Test {
 	public static void main(String[] args) {
-		StdOut.println("Hello");
+		int  a[] = {0, 1, 3, 4};
+		for (int i = 0 ; i < a.length; i++)
+			System.out.println(a[i]);
 	}
+	
 }
